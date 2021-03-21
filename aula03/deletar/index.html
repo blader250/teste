@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deletar</title>
+    <style>
+        body{
+            background-color: rgb(63, 63, 63);
+            color: white;
+        }
+        div{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div>
+    
+        <h1 id="titulo">
+            texto teste
+        </h1>
+    
+        <input type="button" onclick="muda_titulo()" value="Muda o Titulo">
+        <input type="button" value="muda o fundo do titulo" onclick="muda_fundo()">
+        <input type="button" value="muda o titulo para um paragrafo" onclick="muda_elemento()">
+
+    </div>
+    <script>
+        const titulo = document.getElementById('titulo');
+
+
+        function muda_titulo(){
+            titulo.innerHTML = "Amoeba";
+        };
+
+        function muda_fundo(){
+            titulo.style.backgroundColor = "green";
+        }
+
+        function muda_elemento(){
+            titulo = "<p>Paragrafo</p>";
+        }
+    </script>
+</body>
+</html>
